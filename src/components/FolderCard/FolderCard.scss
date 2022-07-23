@@ -1,0 +1,112 @@
+.folderCard {
+  background-color: #2c2b2b;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  @media (min-width: 992px) {
+    &:hover &-heading {
+      color: #d2d2d2;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  &-heading {
+    color: #d2d2d2;
+    font-size: 1.4rem;
+    font-weight: 700;
+    max-width: max-content;
+    margin: auto;
+    margin-bottom: 0.5rem;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 0%;
+      height: 2px;
+      background-color: #df8654;
+      transition: width 200ms ease-out;
+    }
+  }
+
+  &-desc {
+    color: #c2c2c2;
+    font-size: 1rem;
+  }
+
+  &-date {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #afaaaa;
+    font-size: 0.7rem;
+    margin-top: 1.5rem;
+    text-align: left;
+    font-weight: 700;
+  }
+}
+
+.settings-icon {
+  max-width: max-content;
+  margin-left: auto;
+  margin-bottom: 0.5rem;
+
+  &:hover .bi-gear-fill {
+    color: #df8654;
+  }
+}
+
+.bi-gear-fill {
+  font-size: 1.1rem;
+  color: #6d6d6d;
+  cursor: pointer;
+
+  &-active {
+    color: #df8654;
+  }
+}
+
+.folder-settings {
+  position: absolute;
+  padding: 0.7rem 0;
+  border-radius: 1rem;
+  color: #9d9d9d;
+  font-weight: 700;
+  background-color: #000000;
+  top: 3.5rem;
+  right: 0.7rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  &::before {
+    content: "";
+    border: 10px solid transparent;
+    position: absolute;
+    top: -19px;
+    right: 14px;
+    border-bottom: 10px solid #000000;
+  }
+
+  p {
+    padding: 0.3rem 1.5rem;
+    cursor: pointer;
+    margin: 0;
+
+    &:hover {
+      background-color: #b8673c5b;
+    }
+  }
+}
+
+.folder-delete {
+  color: #e45f5f;
+}

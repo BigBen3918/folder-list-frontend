@@ -1,0 +1,36 @@
+.error-modal {
+  background-color: #1e1e1e;
+  padding: 1.5rem 2rem;
+  border-radius: 1rem;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+
+  hr {
+    background-color: rgb(73, 73, 73);
+    margin-top: 0.4rem;
+  }
+}
+
+.error-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h4 {
+    font-size: 1.2rem;
+    color: #e45f5f;
+    font-weight: 700;
+    @media (min-width: 576px) {
+      font-size: 1.5rem;
+    }
+  }
+
+  .bi-x {
+    margin-top: -1rem;
+  }
+}
+
+.error-message {
+  color: rgb(143, 143, 143);
+}

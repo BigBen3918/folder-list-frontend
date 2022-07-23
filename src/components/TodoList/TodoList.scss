@@ -1,0 +1,155 @@
+.loading-screen {
+  max-width: max-content;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.todo-list-route {
+  background-color: inherit;
+}
+
+.todo-list-route-container {
+  margin: auto;
+  max-width: 700px;
+}
+
+.todo-title {
+  color: #d2d2d2;
+  text-align: center;
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+  @media (min-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.todo-desc {
+  color: rgb(163, 163, 163);
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.todo-list {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+}
+
+.todo-list-tabs {
+  display: block;
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+
+  .tabs {
+    border: none;
+    cursor: pointer;
+    background: inherit;
+    font-weight: 700;
+    padding: 0.5rem 0;
+    flex: 1;
+    color: #b8683c;
+    border-bottom: 2px solid #b8673c73;
+    font-size: 0.9rem;
+
+    @media (min-width: 576px) {
+      font-size: 1.1rem;
+    }
+
+    &:hover {
+      color: #ffb88f;
+    }
+
+    &-active {
+      color: #ffb88f;
+      border-bottom-color: #ffb88f;
+    }
+  }
+}
+
+.todo-form {
+  display: flex;
+  border: 2px solid #272727;
+  border-radius: 100rem;
+  background-color: #272727;
+  margin-top: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  padding: 0.5rem;
+
+  input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    padding: 0.6rem 1.1rem;
+    color: #d2d2d2;
+    &::placeholder {
+      color: rgb(177, 174, 174);
+    }
+  }
+
+  button {
+    display: block;
+    height: 100%;
+    border: none;
+    background-color: #df8654;
+    font-size: 1.3rem;
+    border-radius: 10rem;
+    padding: 0.4rem 1.5rem;
+    font-weight: 700;
+    color: #1d1d1d;
+
+    @media (min-width: 992px) {
+      &:hover {
+        background-color: #b8683c;
+      }
+    }
+
+    &:active {
+      transform: scale(0.96);
+    }
+  }
+}
+
+.todo-items {
+  margin-top: 2rem;
+  display: grid;
+}
+
+.delete-all-completed {
+  background-color: #db4d4d;
+  color: white;
+  padding: 0.4rem 1.3rem;
+  border: none;
+  border-radius: 100rem;
+  display: block;
+  margin-left: auto;
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 21px;
+    height: auto;
+    margin-left: 0.5rem;
+    filter: invert(90%);
+  }
+
+  @media (min-width: 950px) {
+    &:hover {
+      background-color: #c04141;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.delete-all-spinner {
+  margin-top: 1.5rem;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: 3rem;
+}

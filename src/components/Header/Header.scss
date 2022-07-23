@@ -1,0 +1,124 @@
+.header {
+  background-color: #111111;
+  padding: 1rem 0 0;
+}
+
+.header-img {
+  width: 50px;
+}
+
+.logo {
+  color: #cfcfcf;
+  font-weight: 700;
+  font-size: 1.2rem;
+  @media (min-width: 576px) {
+    font-size: 1.5rem;
+  }
+
+  &-img {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    color: #df8654;
+  }
+}
+
+.login-logout {
+  position: relative;
+}
+
+.login-button {
+  border: none;
+  background-color: #df8654;
+  color: #1d1d1d;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1rem;
+  display: block;
+  font-weight: bold;
+
+  &:hover {
+    color: #1d1d1d;
+    background-color: #b8683c;
+    text-decoration: none;
+  }
+}
+
+.logout-button {
+  display: block;
+  background-color: #bb0c0c;
+  color: rgb(255, 255, 255);
+  padding: 0.5rem 1rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  margin-top: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+  &::before {
+    content: "";
+    display: block;
+    border: 10px solid transparent;
+    border-bottom-color: #bb0c0c;
+    position: absolute;
+    top: -19px;
+    right: 10px;
+  }
+
+  &:hover::before {
+    border-bottom-color: #9b0c0c;
+  }
+
+  &:hover,
+  &:active,
+  &:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: #9b0c0c;
+  }
+}
+
+.userEmail {
+  color: #df8654;
+  font-size: 0.8rem;
+  font-weight: 400;
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+
+  .bi {
+    color: #df8654;
+  }
+}
+
+.userProfile {
+  cursor: pointer;
+  &-img {
+    width: 40px;
+    border-radius: 100rem;
+    margin-left: 0.5rem;
+    border: 2px solid #cfcfcf;
+    box-shadow: #020333 0px 0px 30px 2px;
+  }
+}
+
+.btn-primary {
+  background-color: #212121;
+  border-color: #9cffe7;
+}
+
+.googleButtonText {
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+
+.bi-google {
+  font-size: 1.2rem;
+}
